@@ -1,9 +1,15 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
+/**
+ * User 
+ * 
+ * @uses Authenticatable
+ * @author Clint Fralick <cfralick@creeperengine.com> 
+ */
 class User extends Authenticatable
 {
     /**
