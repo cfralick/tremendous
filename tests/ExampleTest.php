@@ -23,4 +23,16 @@ class ExampleTest extends TestCase
         $this->visit('/')
              ->see('Laravel');
     }
+
+    /**
+     * testLogin 
+     * 
+     * 
+     * @return void
+     */
+    public function testLogin()
+    {
+        $this->visit('/login')
+            ->see('Login');
+    }
 }
