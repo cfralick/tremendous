@@ -13,3 +13,6 @@ install:
 
 script:
   - composer test
+
+notifications:
+    slack: creeperengine:WqGRBaZPUiplCzJAvPaeEQHM
