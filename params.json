@@ -1,0 +1,6 @@
+{
+  "name": "Tremendous",
+  "tagline": "Slack api experimenting",
+  "body": "# Tremendous  \r\n_built with [Laravel](https://github.com/laravel/laravel)_\r\n\r\n[![Build Status](https://travis-ci.org/creeperengine/tremendous.svg)](https://travis-ci.org/creeperengine/tremendous)\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
