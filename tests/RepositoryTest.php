@@ -4,8 +4,8 @@ namespace App\Tests;
 use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
-use App\Models\Model;
-use App\Repositories\AbstractRepository;
+use App\Models\User;
+use App\Repositories\UserRepository;
 
 
 /**
@@ -23,9 +23,9 @@ class RepositoryTest extends TestCase
      */
     public function testRepository()
     {
-
+        $repo = new UserRepository(new User);
         $this->assertInstanceOf(
-            AbstractRepository::class, new class(new class extends Model{}) extends AbstractRepository {
-        });
+            UserRepository::class, $repo
+        );
     }
 }

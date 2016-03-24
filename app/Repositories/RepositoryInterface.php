@@ -18,7 +18,7 @@ interface RepositoryInterface
      * 
      * @return void
      */
-    public function get(int $id): ModelInterface;
+    public function get(integer $id): ModelInterface;
 
     /**
      * findBy 
@@ -57,7 +57,7 @@ interface RepositoryInterface
      * 
      * @return void
      */
-    public function update(int $id, array $attributes): ModelInterface;
+    public function update(integer $id, array $attributes): ModelInterface;
 
     /**
      * delete 
@@ -66,7 +66,7 @@ interface RepositoryInterface
      * 
      * @return void
      */
-    public function delete(int $id): bool;
+    public function delete(integer $id): bool;
 
 
 

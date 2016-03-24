@@ -14,9 +14,9 @@ trait RepositoryTrait
      * 
      * @return void
      */
-    public function get(int $id): ModelInterface
+    public function get(integer $id): ModelInterface
     {
-        return $this->model->find($id);
+        return $this->model->findOrFail($id);
     }
 
     /**
@@ -52,7 +52,7 @@ trait RepositoryTrait
      * 
      * @return void
      */
-    public function delete(int $id): bool
+    public function delete(integer $id): bool
     {
         return $this->model->delete($id);
     }
@@ -76,7 +76,7 @@ trait RepositoryTrait
      * 
      * @return void
      */
-    public function update(int $id, array $attributes): ModelInterface
+    public function update(integer $id, array $attributes): ModelInterface
     {
         $inst = $this->get($id);
         $inst->update($attributes);
