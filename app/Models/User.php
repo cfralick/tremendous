@@ -10,7 +10,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
  * @uses Authenticatable
  * @author Clint Fralick <cfralick@creeperengine.com> 
  */
-class User extends Authenticatable
+class User extends Authenticatable implements ModelInterface
 {
     /**
      * The attributes that are mass assignable.
